@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MostFrequentCharacterFinder.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSString *inputString = @"ASkjnasdvASvMn<ZVAdsvkjASfaIOAU";
+        NSString *mostFrequentCharacter = [MostFrequentCharacterFinder mostFrequentCharacterInString:inputString];
+        NSLog(@"Most frequent character in string:\n%@\nis:\n%@", inputString, mostFrequentCharacter);
     }
     return 0;
 }
